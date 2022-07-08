@@ -751,7 +751,7 @@ namespace GUI.FormEdelivery
 
                 DKMHTEMP = DKMHTEMP.Concat(DKMH).ToList();
 
-                dataGridView2.DataSource = DKMHTEMP.Where(t => t.BienSo_SoHieu == dataGridView1.CurrentRow.Cells[0].Value.ToString() && dataGridView1.CurrentRow.Cells[15].Value.ToString() == t.VehicelID.ToString()).ToList();
+                dataGridView2.DataSource = DKMHTEMP.Where(t => t.BienSo_SoHieu == dataGridView1.CurrentRow.Cells[0].Value.ToString() && dataGridView1.CurrentRow.Cells[15].Value.ToString() == t.VehicelID.ToString()).OrderBy(t => int.Parse(t.SOItems)).ToList();
 
                 RemoveColumnDsSO();
 
@@ -898,16 +898,34 @@ namespace GUI.FormEdelivery
             {
                 MessageBox.Show("Bạn chưa chọn nơi giao nhận hàng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //else if (cbDVVC.SelectedIndex == -1)
-            //{
-
-            //    MessageBox.Show("Bạn chưa chọn đơn vị vẩn chuyển!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            else if (!KiemTraKhongNhapTrongLuong())
+            {
+                MessageBox.Show("Bạn không được bỏ trống xe hoặc mặt hàng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 //Xác nhận lưu
                 MessageBoxSave();
             }
+        }
+        /// <summary>
+        /// Kiểm tra  không kê khai xe, không nhập mặt hàng, không nhập trọng lượng
+        /// </summary>
+        public bool KiemTraKhongNhapTrongLuong()
+        {
+            if (DKMHTEMP == null)
+            {
+                return false;
+            }
+            if (DKMHTEMP.Count == 0)
+            {
+                return false;
+            }
+            if (DKMHTEMP.Sum(t => t.TRONGLUONG) == 0)
+            {
+                return false;
+            }
+            return true;
         }
         /// <summary>
         /// Hiển thị xác nhận lưu thông tin đăng ký Edelivery
