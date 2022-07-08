@@ -4,3 +4,9 @@ C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.csproj.As
 C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.csproj.CoreCompileInputs.cache
 C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.dll
 C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.pdb
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\bin\Release\Constant.dll
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\bin\Release\Constant.pdb
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\obj\Release\Constant.csproj.AssemblyReference.cache
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\obj\Release\Constant.csproj.CoreCompileInputs.cache
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\obj\Release\Constant.dll
+C:\Users\phatn\source\repos\EDeliveryUpdate\VASEDELI\EdeliveryApp\Constant\obj\Release\Constant.pdb
