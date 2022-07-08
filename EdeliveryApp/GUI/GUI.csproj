@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39FCD141-62D4-4D99-88A3-74E81C796733}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdmin\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin\FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin\FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmAddXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmAddXe.Designer.cs">
+      <DependentUpon>FrmAddXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmDsXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmDsXe.Designer.cs">
+      <DependentUpon>FrmDsXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmEditXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKyXe\FrmEditXe.Designer.cs">
+      <DependentUpon>FrmEditXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDVVC\FrmAddDVVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDVVC\FrmAddDVVC.Designer.cs">
+      <DependentUpon>FrmAddDVVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDVVC\FrmDSDVVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDVVC\FrmDSDVVC.Designer.cs">
+      <DependentUpon>FrmDSDVVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDVVC\FrmEditDVVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDVVC\FrmEditDVVC.Designer.cs">
+      <DependentUpon>FrmEditDVVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSDonHang.Designer.cs">
+      <DependentUpon>FrmDSDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSDonHangSuaDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSDonHangSuaDangKy.Designer.cs">
+      <DependentUpon>FrmDSDonHangSuaDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSKhaiBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmDSKhaiBao.Designer.cs">
+      <DependentUpon>FrmDSKhaiBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmKeHoachGiaoNhanTongHop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmKeHoachGiaoNhanTongHop.Designer.cs">
+      <DependentUpon>FrmKeHoachGiaoNhanTongHop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmKhaiBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmKhaiBao.Designer.cs">
+      <DependentUpon>FrmKhaiBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmShowInstance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmShowInstance.Designer.cs">
+      <DependentUpon>FrmShowInstance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmSuaMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmSuaMatHang.Designer.cs">
+      <DependentUpon>FrmSuaMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmThemXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmThemXe.Designer.cs">
+      <DependentUpon>FrmThemXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmThemXeSuaDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdelivery\FrmThemXeSuaDangKy.Designer.cs">
+      <DependentUpon>FrmThemXeSuaDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmAddTaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmAddTaiXe.Designer.cs">
+      <DependentUpon>FrmAddTaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmDSTaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmDSTaiXe.Designer.cs">
+      <DependentUpon>FrmDSTaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmEditTaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaiXe\FrmEditTaiXe.Designer.cs">
+      <DependentUpon>FrmEditTaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromInstance\FrmKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromInstance\FrmKho.Designer.cs">
+      <DependentUpon>FrmKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin\FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangKyXe\FrmAddXe.resx">
+      <DependentUpon>FrmAddXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangKyXe\FrmDsXe.resx">
+      <DependentUpon>FrmDsXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangKyXe\FrmEditXe.resx">
+      <DependentUpon>FrmEditXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDVVC\FrmAddDVVC.resx">
+      <DependentUpon>FrmAddDVVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDVVC\FrmDSDVVC.resx">
+      <DependentUpon>FrmDSDVVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDVVC\FrmEditDVVC.resx">
+      <DependentUpon>FrmEditDVVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmDSDonHang.resx">
+      <DependentUpon>FrmDSDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmDSDonHangSuaDangKy.resx">
+      <DependentUpon>FrmDSDonHangSuaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmDSKhaiBao.resx">
+      <DependentUpon>FrmDSKhaiBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmKeHoachGiaoNhanTongHop.resx">
+      <DependentUpon>FrmKeHoachGiaoNhanTongHop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmKhaiBao.resx">
+      <DependentUpon>FrmKhaiBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmShowInstance.resx">
+      <DependentUpon>FrmShowInstance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmSuaMatHang.resx">
+      <DependentUpon>FrmSuaMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmThemXe.resx">
+      <DependentUpon>FrmThemXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdelivery\FrmThemXeSuaDangKy.resx">
+      <DependentUpon>FrmThemXeSuaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaiXe\FrmAddTaiXe.resx">
+      <DependentUpon>FrmAddTaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaiXe\FrmDSTaiXe.resx">
+      <DependentUpon>FrmDSTaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaiXe\FrmEditTaiXe.resx">
+      <DependentUpon>FrmEditTaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromInstance\FrmKho.resx">
+      <DependentUpon>FrmKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{bb731cd5-a1c4-470a-a3b4-9f77f491c8e9}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Constant\Constant.csproj">
+      <Project>{6f64e9a3-7e0b-431a-af8e-cf010557bcea}</Project>
+      <Name>Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{7900a543-563a-42a1-a221-352fd6253c7a}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

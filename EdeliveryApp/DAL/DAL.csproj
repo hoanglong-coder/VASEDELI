@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7900A543-563A-42A1-A221-352FD6253C7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntitiesFramwork\Barem.cs" />
+    <Compile Include="EntitiesFramwork\CompanyModel.cs" />
+    <Compile Include="EntitiesFramwork\CustomerModel.cs" />
+    <Compile Include="EntitiesFramwork\DbConnection.cs" />
+    <Compile Include="EntitiesFramwork\DK_Edelivery.cs" />
+    <Compile Include="EntitiesFramwork\DriverRegister.cs" />
+    <Compile Include="EntitiesFramwork\Edelivery_GNH.cs" />
+    <Compile Include="EntitiesFramwork\LOG.cs" />
+    <Compile Include="EntitiesFramwork\MSdynamicsnapshotjob.cs" />
+    <Compile Include="EntitiesFramwork\MSdynamicsnapshotview.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_agent_parameters.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_altsyncpartners.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_articlehistory.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_conflicts_info.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_conflict_Edelivery_Replication_DK_Edelivery.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_conflict_Edelivery_Replication_Edelivery_GNH.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_conflict_Edelivery_Replication_SOLineModel.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_contents.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_current_partition_mappings.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_dynamic_snapshots.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_errorlineage.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_generation_partition_mappings.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_genhistory.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_history.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_identity_range.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_log_files.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_metadataaction_request.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_partition_groups.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_past_partition_mappings.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_replinfo.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_sessions.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_settingshistory.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_supportability_settings.cs" />
+    <Compile Include="EntitiesFramwork\MSmerge_tombstone.cs" />
+    <Compile Include="EntitiesFramwork\MSrepl_errors.cs" />
+    <Compile Include="EntitiesFramwork\ProviderModel.cs" />
+    <Compile Include="EntitiesFramwork\SOLineModel.cs" />
+    <Compile Include="EntitiesFramwork\sysmergearticle.cs" />
+    <Compile Include="EntitiesFramwork\sysmergepartitioninfo.cs" />
+    <Compile Include="EntitiesFramwork\sysmergepublication.cs" />
+    <Compile Include="EntitiesFramwork\sysmergeschemaarticle.cs" />
+    <Compile Include="EntitiesFramwork\sysmergeschemachange.cs" />
+    <Compile Include="EntitiesFramwork\sysmergesubscription.cs" />
+    <Compile Include="EntitiesFramwork\sysmergesubsetfilter.cs" />
+    <Compile Include="EntitiesFramwork\sysreplserver.cs" />
+    <Compile Include="EntitiesFramwork\UserModel.cs" />
+    <Compile Include="EntitiesFramwork\VehicleInfoMapping.cs" />
+    <Compile Include="EntitiesFramwork\VehicleModel.cs" />
+    <Compile Include="EntitiesFramwork\VehicleOwnerModel.cs" />
+    <Compile Include="EntitiesFramwork\Vehicle_VehicleOwner_Mapping.cs" />
+    <Compile Include="Model\MDangKyXe.cs" />
+    <Compile Include="Model\MDriverRegister.cs" />
+    <Compile Include="Model\MDSEdelivery.cs" />
+    <Compile Include="Model\MEdelivery.cs" />
+    <Compile Include="Model\MEdelivery_GNH.cs" />
+    <Compile Include="Model\MInstance.cs" />
+    <Compile Include="Model\MVehicleModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

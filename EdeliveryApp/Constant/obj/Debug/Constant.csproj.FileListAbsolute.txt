@@ -1,0 +1,6 @@
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\bin\Debug\Constant.dll
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\bin\Debug\Constant.pdb
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Debug\Constant.csproj.AssemblyReference.cache
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Debug\Constant.csproj.CoreCompileInputs.cache
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Debug\Constant.dll
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Debug\Constant.pdb

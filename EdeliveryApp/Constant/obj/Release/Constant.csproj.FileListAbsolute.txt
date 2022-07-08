@@ -1,0 +1,6 @@
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\bin\Release\Constant.dll
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\bin\Release\Constant.pdb
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.csproj.AssemblyReference.cache
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.csproj.CoreCompileInputs.cache
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.dll
+C:\Users\phatn\source\repos\EdeliveryApp\Constant\obj\Release\Constant.pdb
